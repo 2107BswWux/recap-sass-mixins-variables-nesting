@@ -1,0 +1,29 @@
+@import "resets";
+@import "var";
+@import "mixins";
+@import "nav";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+// css specify - font-family: 'Sora', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+// css specify - font-family: 'Lora', serif;
+
+
+// create a variable partial eg _var.scss test the variable first to see if that is linked 
+// and working properly
+// when creating in your code
+
+// create a mixin partial eg _mixin.scss to test if mixins is working
+h1{
+    // testing variable
+    font-size:$main-heading;
+
+    // testing mixin
+    @include main-heading--style;
+}
+p{
+    @include body-font--style;
+    
+}

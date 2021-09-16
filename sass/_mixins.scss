@@ -1,0 +1,18 @@
+
+// text mixins
+
+
+// to begin with just try adding one style element and see if thats working 
+// eg a color. Then if that is all linked and working add further styl elements to 
+// the mixin
+@mixin main-heading--style {
+    color: palegreen;
+    letter-spacing: 0.2rem;
+    font-size: $main-heading;
+    font-family: $heading-font;
+}
+@mixin body-font--style {
+    color: tomato;
+    letter-spacing: 0.2rem;
+    font-size: $body-text;
+}
